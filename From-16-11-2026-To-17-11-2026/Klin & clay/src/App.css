@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-bar
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 40px 24px 40px;
+  background-color: #ece4d6;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.title{
+  font-family: "Fraunces", serif;
+  font-size: 20.8px;
+  font-weight: 500; 
+}
+
+.title a{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  gap: 2rem;
+  list-style: none;
+}
+
+.nav-list a{
+  color: black;
+  text-decoration:  none;
+  position: relative;
+}
+
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: black;
+  transition: width 0.2s ease;
+}
+
+.nav-list a:hover::after {
+  top:21px;
+  width: 100%;
+}
+
+.main-pge {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 80px 64px 130px;
+  gap: 60px;
+  background-color: #ece4d6; 
+  border-bottom: 0.5px solid rgb(201, 201, 201);
+}
+
+.main-1 {
+  flex: 1;
+}
+
+.main-1 h1 {
+  font-family: "Fraunces", serif;
+  font-size: 50px;
+  width: 500px;
+  margin: 0 0 25px 0;
+  line-height: 1.15;
+  font-weight: 500;
+}
+
+.main-1 p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 17.28px;
+  width: 500px;
+  line-height: 1.7;
+  margin: 0;
+  color: #4a423a;
+}
+
+.main-1 button {
+  padding: 13.6px 28px;
+  margin-top: 25px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  border-style: none;
+  background-color: #8c4a2f;
+  cursor: pointer;
+}
+
+.main-1 a{
+  text-decoration: none;
+  color: #f8f3e9;
+}
+
+.main-2 {
+  flex: 1;
+}
+
+.main-2 img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  border-radius: 0 30px 0 30px;
+  animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.phil-pge{
+  display: flex;
+  padding: 80px 80px 64px 130px;
+  gap: 90px;
+  background-color: #ece4d6; 
+}
+
+.phil-1{
+   width: 100%;
+}
+
+.phil-1 h1{
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+}
+
+.phil-2 p{
+  font-family: "Work Sans", sans-serif;
+  font-size: 17.28px;
+  color: #4a423a;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+
+.shop-pge{
+  padding: 80px 80px 64px 130px;
+  background-color: #ece4d6; 
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.shop-pge h1{
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+}
+
+.parent-card{
+  display: flex;
+  gap:30px;
+}
+
+.shop-card{
+  background-color: #f8f3e9;
+  width: 256px;
+  height: 400px;
+  margin-top: 40px;
+}
+
+.card-img img{
+  width: 256px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card-2 h4{
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.card-2 p{
+  font-family: "Work Sans", sans-serif;
+  margin-top: 10px;
+  color:  #6b6156; 
+  font-size: 14.72px;
+}
+
+.card-2 h5{
+  color: #8c4a2f;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.workshop-pge{
+  padding: 80px 80px 64px 130px;
+  background-color: #ece4d6; 
+
+}
+
+.workshop-pge h1{
+  font-family: "Fraunces", serif;
+  font-weight: 500;
+}
+
+.workshop-tbe {
+  width: 100%;
+  border-collapse: collapse;
+  border-bottom: 1px solid rgb(201, 201, 201); 
+}
+
+.workshop-tbe th,
+.workshop-tbe td {
+  border-bottom: 1px solid rgb(201, 201, 201);;
+  padding: 20px;
+  text-align: left;
+}
+
+.workshop-tbe th{
+  font-family: "Fraunces", serif;
+}
+
+.workshop-tbe td{
+  font-family: "Work Sans", sans-serif;
+}
+
+.quote-pge{
+  padding: 80px 130px 64px 145px;
+  background-color: #ece4d6;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.quote-mod {
+  display: flex;
+  position: relative;
+  margin: 20px 0;
+}
+
+.quote-text {
+  font-size: 40px;
+  font-weight: 400;
+  color: #333;
+  margin-left: 150px;
+  margin-right: 260px;
+  margin-bottom: 15px;
+}
+
+.quote-author {
+  position: absolute;
+  font-size: 17px;
+  text-align: center;
+  width:150px;
+  color: rgb(117, 117, 117);
+  font-style: normal;
+  margin-top: 40px;
+  top:30px;
+  left: 660px;
+}
+
+.quote-author-2{
+  position: absolute;
+  font-size: 17px;
+  top:110px;
+  left: 450px;
+  width:150px;
+  color: rgb(117, 117, 117);
+  font-style: normal;
+}
+
+.visit-pge{
+  display: flex;
+  gap: 90px;
+  padding: 80px 130px 64px 145px;
+  background-color: #ece4d6;
+  border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.visit-pge h2{
+  font-weight: 500;
+  font-size: 32px;
+  font-family: "Fraunces", serif;
+  margin-bottom: 20px;
+}
+
+.visit-pge ul{
+  font-family: "Work Sans", sans-serif;   
+  list-style: none;
+}
+
+.visit-pge ul li {
+  display: grid;
+  grid-template-columns: 120px auto;
+  padding: 10px 0;
+}
+
+.visit-pge .day{
+  color:#78805f;
+}
+
+.visit-pge-1 p{
+  font-family: "Work Sans", sans-serif;   
+  color:#78805f;
+  margin-top: 20px;
+}
+
+.visit-form p{
+  font-family: "Work Sans", sans-serif;
+  color: #4A423A;
+  font-size: 14.72px;
+  margin-bottom: 8px;
+}
+
+.visit-inp
+{
+  margin-bottom: 18px;
+  width: 500px;
+  height: 40px;
+  padding-left: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+.visit-inpar{
+  display: block;
+  margin-bottom: 18px;
+  width: 500px;
+  height: 90px;
+  padding: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+}
+
+.visit-form input{
+  background-color: #f8f3e9;
+  border: 1px solid #ccc;
+}
+
+.visit-form select{
+  background-color: #f8f3e9;
+  border: 1px solid #ccc;
+}
+
+.visit-form textarea{
+  background-color: #f8f3e9;
+  border: 1px solid #ccc;
+}
+
+.visit-form button{
+  padding: 13.6px 28px;
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  border-style: none;
+  background-color: #8c4a2f;
+  color: #f8f3e9;
+  cursor: pointer;
+}
+
+.footer-pge{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: #ece4d6;
+}
+
+.footer-pge p{
+  font-size: 14.4px;
+  font-family: "Work Sans", sans-serif;
+  color: #78805f;
+}
+
+.footer-pge a{
+  margin-right: 10px;
+  font-size: 14.4px;
+  font-family: "Work Sans", sans-serif;
+  color: #78805f;
+  text-decoration: none;
+}

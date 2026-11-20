@@ -1,0 +1,82 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h3{
+    text-align: center;
+    margin-top: 90px;
+    color:white;
+}
+
+.welcome{
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.welcome img {
+  width: 35px;
+  height: 35px;
+  vertical-align: middle;
+  transform: translateY(-5px);
+}
+
+.login-mod
+{
+    display: grid;
+    justify-content: center;
+}
+
+.login-box {
+    width: 350px;
+    margin: 30px auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.login-box div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.login-box p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.signIn-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(19, 19, 82);
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.test{
+    background-image: linear-gradient(to bottom right, rgb(9, 240, 248), rgb(62, 95, 165));
+    height:100vh;
+}
